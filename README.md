@@ -12,7 +12,10 @@ Plain HTML and CSS. No build step. Vercel serves the files as they are.
 - **about.html**: The founder story. Casey Noon is not a real person. The empty office fridge is the joke.
 - **contact.html**: The note form. Name, email, optional phone, a “Pick your Friday” dropdown, and a message.
 - **thanks.html**: The thank-you page. The form sends people here after a successful submit. It is not in the menu.
-- **styles.css**: The shared look. Every page links to this one file for colors, type, the nav, and the footer.
+- **styles.css**: The shared look. Every page links to this one file for colors, type, the nav, and the footer. The colors follow the logo: sunny yellow `#ffcb13`, coral `#fd6651`, and charcoal `#2d2e33`.
+- **images/logo.png**: The full logo, trimmed and sized for the web. The homepage hero uses it.
+- **images/logo-icon.png**: Just the truck and sun. The header on every page uses it next to the name.
+- **images/favicon.png**: A small square of that same truck icon, for the browser tab.
 - **README.md**: This file. GitHub shows it on the repo’s front page.
 
 Every page uses the same header links and the same footer. The footer says this is a fictional demo business, that you must be 21 or older, and to drink responsibly.

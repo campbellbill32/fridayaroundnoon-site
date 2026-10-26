@@ -1,11 +1,13 @@
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --ink: #2d2a32;
-  --muted: #4e4658;
-  --paper: rgba(255, 255, 255, 0.72);
-  --paper-strong: rgba(255, 255, 255, 0.9);
-  --line: rgba(45, 42, 50, 0.16);
+  --ink: #2d2e33;
+  --muted: #4a4852;
+  --sun: #ffcb13;
+  --coral: #fd6651;
+  --paper: rgba(255, 255, 255, 0.82);
+  --paper-strong: rgba(255, 255, 255, 0.94);
+  --line: rgba(45, 46, 51, 0.16);
   --max: 68rem;
 }
 
@@ -15,7 +17,7 @@ body {
   position: relative;
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   color: var(--ink);
-  background: linear-gradient(160deg, #ffe8a3 0%, #ffb38a 52%, #ff8c94 100%);
+  background: linear-gradient(165deg, #ffe56a 0%, #ffcb13 36%, #ff9468 70%, #fd6651 100%);
   min-height: 100vh;
   min-height: 100dvh;
   display: flex;
@@ -74,7 +76,18 @@ main,
   font-size: 1.15rem;
 }
 
-.logo span[aria-hidden="true"] { font-size: 1.35rem; }
+.logo img {
+  width: 2.75rem;
+  height: auto;
+  flex: none;
+}
+
+.hero-logo {
+  display: block;
+  width: min(26rem, 92%);
+  height: auto;
+  margin: 0.35rem auto 0.35rem;
+}
 
 .nav,
 .footer-nav {
@@ -95,7 +108,7 @@ main,
 
 .nav a[aria-current="page"] {
   background: var(--ink);
-  color: #fff;
+  color: var(--sun);
 }
 
 main {
@@ -122,6 +135,8 @@ h1 {
   line-height: 1.05;
   letter-spacing: -0.03em;
 }
+
+.hero h1 { line-height: 0; }
 
 h2 { font-size: clamp(1.5rem, 3vw, 2rem); letter-spacing: -0.02em; line-height: 1.2; }
 
@@ -235,7 +250,7 @@ h3 { font-size: 1.2rem; letter-spacing: -0.02em; }
   height: 2.4rem;
   border-radius: 50%;
   background: var(--ink);
-  color: #ffe8a3;
+  color: var(--sun);
   display: grid;
   place-items: center;
   font-weight: 800;
@@ -263,7 +278,7 @@ h3 { font-size: 1.2rem; letter-spacing: -0.02em; }
 .badge {
   align-self: flex-start;
   background: var(--ink);
-  color: #ffe8a3;
+  color: var(--sun);
   font-size: 0.78rem;
   font-weight: 800;
   letter-spacing: 0.03em;
