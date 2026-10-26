@@ -24,7 +24,7 @@ Every page uses the same header links and the same footer. The footer says this 
 
 The form on `contact.html` is a normal HTML form. It posts to Web3Forms at `https://api.web3forms.com/submit`. There is no JavaScript and no build.
 
-1. **Access key.** A hidden input named `access_key` is set to `YOUR_WEB3FORMS_ACCESS_KEY`. That is a placeholder. Create a key at [web3forms.com](https://web3forms.com/), then replace the placeholder in `contact.html`. Web3Forms expects this key in the page. Until you swap it in, a submit will not arrive as email.
+1. **Access key.** A hidden input named `access_key` already holds the live Web3Forms key. Leave that value as it is. Web3Forms uses it to deliver the note by email.
 2. **Honeypot.** A hidden checkbox named `botcheck` sits in the form. People do not see it or fill it in. If a bot checks it, Web3Forms throws the submission out.
 3. **Redirect.** A hidden input named `redirect` is `https://fridayaroundnoon.com/thanks.html`. After a successful send, Web3Forms sends the visitor to that thank-you page.
 4. **The fields a person fills in.** Name, email, phone (optional), the Friday dropdown, and a message. Web3Forms puts those in the email. The email subject is “New Friday note from fridayaroundnoon.com”.

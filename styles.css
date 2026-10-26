@@ -125,18 +125,23 @@ main {
   padding: 0.3rem 0.8rem;
   font-size: 0.85rem;
   font-weight: 700;
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
 }
 
 .sun { font-size: clamp(3rem, 8vw, 4.5rem); line-height: 1; margin-bottom: 0.75rem; }
 
 h1 {
   font-size: clamp(2.3rem, 6.5vw, 4.4rem);
-  line-height: 1.05;
+  line-height: 1.15;
   letter-spacing: -0.03em;
 }
 
-.hero h1 { line-height: 0; }
+.hero h1 {
+  line-height: 1.15;
+  margin: 0.2rem 0 0;
+}
+
+.hero h1.logo-heading { line-height: 0; margin: 0; }
 
 h2 { font-size: clamp(1.5rem, 3vw, 2rem); letter-spacing: -0.02em; line-height: 1.2; }
 
@@ -145,7 +150,7 @@ h3 { font-size: 1.2rem; letter-spacing: -0.02em; }
 .tagline,
 .lede {
   max-width: 38rem;
-  margin: 1rem auto 0;
+  margin: 1.35rem auto 0;
   font-size: 1.2rem;
   line-height: 1.55;
 }
@@ -375,6 +380,10 @@ textarea { min-height: 8rem; resize: vertical; }
 .form-note { font-size: 0.92rem; color: var(--muted); }
 
 .thanks { text-align: center; }
+
+.thanks h1 { line-height: 1.15; margin-bottom: 1rem; }
+
+.thanks p + p { margin-top: 0.85rem; }
 
 .thanks .actions { margin-top: 1.25rem; }
 
