@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/favicon.png" type="image/png">
+  <title>Contact · Friday Around Noon</title>
+  <meta name="description" content="Send a note to the fictional Friday Around Noon cooler. The form posts to Web3Forms.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+  <header class="site-header">
+    <a class="logo" href="index.html"><img src="images/logo-icon.png" alt="Friday Around Noon" width="44" height="39"><span aria-hidden="true">Friday Around Noon</span></a>
+    <nav class="nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="how-it-works.html">How it works</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+  </header>
+  <main id="content">
+    <header class="hero">
+      <p class="kicker">No order is placed</p>
+      <h1>Tell us about your Friday</h1>
+      <p class="lede">Tell us where the cooler should knock. Send a Friday, a name, and a note. Nothing is ordered and nothing is charged.</p>
+    </header>
+    <form class="form narrow" action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="9b8277dc-fc61-4c9d-a9d0-d2e81b1ba8a5">
+      <input type="hidden" name="subject" value="New Friday note from fridayaroundnoon.com">
+      <input type="hidden" name="from_name" value="Friday Around Noon">
+      <input type="hidden" name="redirect" value="https://fridayaroundnoon.com/thanks.html">
+      <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" style="display: none;" aria-hidden="true">
+
+      <div class="field">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" autocomplete="name" required>
+      </div>
+      <div class="field">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" autocomplete="email" required>
+      </div>
+      <div class="field">
+        <label for="phone">Phone <span class="optional">(optional)</span></label>
+        <input type="tel" id="phone" name="phone" autocomplete="tel">
+      </div>
+      <div class="field">
+        <label for="friday">Pick your Friday</label>
+        <select id="friday" name="friday" required>
+          <option value="" selected disabled>Choose a Friday</option>
+          <option>This coming Friday (I'm already looking at the clock)</option>
+          <option>Next Friday (I can wait, barely)</option>
+          <option>Every Friday (please supervise me)</option>
+          <option>A holiday Friday (chaotic good)</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required placeholder="Where should the fictional cooler knock?"></textarea>
+      </div>
+      <p class="form-note">Fictional demo. You must be 21 or older. Drink responsibly. Sending this does not place a real order or charge a card.</p>
+      <button class="button" type="submit">Send the Friday note</button>
+    </form>
+  </main>
+  <footer class="site-footer">
+    <nav class="footer-nav" aria-label="Footer">
+      <a href="index.html">Home</a>
+      <a href="how-it-works.html">How it works</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <p class="disclaimer">Friday Around Noon is a fictional demo business. You must be 21 or older. Drink responsibly.</p>
+    <p class="fineprint">&copy; 2026 fridayaroundnoon.com</p>
+  </footer>
+</body>
+</html>

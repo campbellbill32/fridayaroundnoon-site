@@ -3,25 +3,71 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/favicon.png" type="image/png">
   <title>Friday Around Noon</title>
+  <meta name="description" content="A fictional delivery service that brings cold beer to your office or home every Friday around noon.">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main class="hero">
-    <div class="sun" aria-hidden="true">☀️</div>
-    <h1>Friday Around Noon</h1>
-    <p class="intro">
-      That golden hour when the week winds down, lunch plans form, and the weekend
-      is just over the horizon. Pull up a chair and stay a while.
-    </p>
-    <a class="button" href="#about">Say hello</a>
+  <a class="skip" href="#content">Skip to content</a>
+  <header class="site-header">
+    <a class="logo" href="index.html"><img src="images/logo-icon.png" alt="Friday Around Noon" width="44" height="39"><span aria-hidden="true">Friday Around Noon</span></a>
+    <nav class="nav" aria-label="Main">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="how-it-works.html">How it works</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main id="content">
+    <section class="hero">
+      <p class="kicker">Fictional beer delivery · Must be 21+</p>
+      <h1 class="logo-heading"><img class="hero-logo" src="images/logo.png" alt="Friday Around Noon" width="835" height="520"></h1>
+      <p class="tagline">Cold beer that shows up at your office or your couch. Every Friday. Around noon.</p>
+      <div class="actions">
+        <a class="button" href="contact.html">Reserve a Friday</a>
+        <a class="button secondary" href="pricing.html">See the plans</a>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="points-title">
+      <h2 class="section-title" id="points-title">Why people invent us in meetings</h2>
+      <div class="grid-3">
+        <article class="card">
+          <div class="emoji" aria-hidden="true">🕛</div>
+          <h3>Noon-ish, on purpose</h3>
+          <p>We aim for the hour when lunch plans form and the weekend starts clearing its throat. Not 9am. Not “sometime after standup.”</p>
+        </article>
+        <article class="card">
+          <div class="emoji" aria-hidden="true">🧊</div>
+          <h3>Cold enough to count</h3>
+          <p>If the can is not sweating, it does not leave the cooler. That is the whole brand promise, plus a sun hat.</p>
+        </article>
+        <article class="card">
+          <div class="emoji" aria-hidden="true">📵</div>
+          <h3>No group-text diplomacy</h3>
+          <p>Someone always says they will grab the beer. We are that someone, except we remember, and we bring ice.</p>
+        </article>
+      </div>
+    </section>
+    <section class="section hero">
+      <h2>The week can clock out early</h2>
+      <p class="lede">Pick a silly plan, tell us where the door is, and let a fictional cooler handle the rest.</p>
+      <div class="actions">
+        <a class="button" href="how-it-works.html">See how a Friday arrives</a>
+      </div>
+    </section>
   </main>
-  <section id="about" class="about">
-    <h2>What is this?</h2>
-    <p>A tiny practice site, built with plain HTML and CSS, deployed with GitHub and Vercel.</p>
-  </section>
-  <footer>
-    <p>&copy; 2026 fridayaroundnoon.com <span class="dot">&middot;</span> <span class="vibes">Made with ☕ and good vibes</span></p>
+  <footer class="site-footer">
+    <nav class="footer-nav" aria-label="Footer">
+      <a href="index.html">Home</a>
+      <a href="how-it-works.html">How it works</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <p class="disclaimer">Friday Around Noon is a fictional demo business. You must be 21 or older. Drink responsibly.</p>
+    <p class="fineprint">&copy; 2026 fridayaroundnoon.com</p>
   </footer>
 </body>
 </html>
