@@ -89,7 +89,7 @@ main,
 .footer-nav a {
   text-decoration: none;
   font-weight: 600;
-  padding: 0.45rem 0.75rem;
+  padding: 0.7rem 0.8rem;
   border-radius: 999px;
 }
 
@@ -299,15 +299,17 @@ h3 { font-size: 1.2rem; letter-spacing: -0.02em; }
 .faq details {
   background: var(--paper);
   border-radius: 0.9rem;
-  padding: 0.85rem 1rem;
+  padding: 0.25rem 0;
 }
 
 .faq summary {
   cursor: pointer;
   font-weight: 700;
+  padding: 0.85rem 1rem;
+  min-height: 44px;
 }
 
-.faq details p { margin-top: 0.55rem; }
+.faq details p { margin: 0; padding: 0 1rem 0.95rem; }
 
 .story { display: grid; gap: 0.9rem; }
 
